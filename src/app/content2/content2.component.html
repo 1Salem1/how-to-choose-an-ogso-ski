@@ -1,0 +1,25 @@
+<html>
+<head>
+    
+    </head>
+    <body>
+<div class="container">
+  <form [formGroup]='myForm'>
+  <fieldset class="field-form">
+  <legend class="title"><h4>Your Weight</h4></legend>
+  <h5 for="group1">Choose your correct weight</h5>
+  <p class="range-field">
+    <input  formControlName = "weight" type="range" id="range_height" min="20" max="130" step="1"  oninput="this.nextElementSibling.value = this.value +' kg'"/> 
+    <input  type="text"id="output-weight" /> <output for ="range_height" ></output>
+    
+  </p>
+  <a   routerLink="/SkiLevel" id= "button" class="waves-effect waves-light btn-large">Next Step</a>
+  </fieldset>
+  
+  
+
+  </form>
+  
+</div>
+</body>
+</html>

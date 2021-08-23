@@ -1,0 +1,29 @@
+<html>
+
+    <body>
+<div class="container">
+  <form  [formGroup]='myForm'>
+  <fieldset  class="field-form">
+  <legend class="title"><h4>Terrain Type</h4></legend>
+  <div class="container section row">
+    <select   #mySelect   id="select_id" class="browser-default"  >
+      <option value="" disabled selected >Choose your terrain type </option>
+      <option value="all-moutain">ALL-MOUNTAIN SKI</option>
+      <option value="powder-ski">POWDER SKI</option>
+      <option value="big-mountain">BIG MOUNTAIN</option>
+      <option value="alpine-touring">ALPINE TOURING</option>
+    </select>
+    </div>
+  <a (click)="onChange(mySelect.value)"  routerLink="/result" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
+
+  </fieldset>
+  
+  
+
+  </form>
+
+  
+</div>
+</body>
+
+</html>
